@@ -8,7 +8,8 @@ class FlatsController < ApplicationController
     {
       lat: flat.latitude,
       lon: flat.longitude,
-      info_window_html: render_to_string(partial: "info_window", locals: {flat: flat})
+      info_window_html: render_to_string(partial: "info_window", locals: {flat: flat}),
+      marker_html: render_to_string(partial: "marker")
     }
     end
   end
